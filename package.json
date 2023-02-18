@@ -15,6 +15,6 @@
     "postman-request": "^2.88.1-postman.32"
   },
   "engines": {
-    "node": "12.22.9"
+    "node": "19.4.0"
   }
 }
