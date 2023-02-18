@@ -5,7 +5,7 @@ const forecast = require('./utils/forecast')
 
 
 const app = express();
-//const port = process.env.PORT || 3000 //use PORT in Heroku and fallback 3000 when in local
+const port = process.env.PORT || 3000; //use PORT in Heroku and fallback 3000 when in local
 const pathToPublicDirectory = path.join(__dirname, '../public');
 
 
@@ -119,7 +119,7 @@ app.get("*", (req, res) => {
 })
 
 //Starting the Express server
-const port = 3000; //use port from env when deploying to cloud
+//const port = 3000; //use port from env when deploying to cloud
 app.listen(port, ()=>{
     console.log(`Server listening on ${port}`);
 })
